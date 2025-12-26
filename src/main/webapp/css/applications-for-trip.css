@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Veimalyashka';
+    src: url('fonts/Veimalyashka-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proso';
+    src: url('fonts/prosorovanastasia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Veimalyashka', sans-serif;
+    background: #f3efe4;
+    min-height: 100vh;
+    padding: 20px;
+    color: #2d3436;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.go-back-btn {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: black;
+    font-size: 1.3em;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    font-family: 'Proso', sans-serif;
+}
+
+.go-back-btn:hover {
+    color: #c65a3a;
+}
+
+.applications-header {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.applications-header h1 {
+    color: #2d3436;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+
+.trip-info h2 {
+    color: #2d3436;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+}
+
+.trip-dates {
+    font-family: 'Proso', sans-serif;
+    font-size: 1.2em;
+    color: #636e72;
+    background: #f8f9fa;
+    padding: 8px 16px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.applications-container {
+    background: #f2e08b;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.applications-count {
+    font-family: 'Proso', sans-serif;
+    font-size: 1.2em;
+    color: #636e72;
+    margin-bottom: 20px;
+    text-align: center;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.no-applications {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 20px;
+    color: #636e72;
+}
+
+.no-applications i {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #adb5bd;
+}
+
+.no-applications h3 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.no-applications p {
+    font-family: 'Proso', sans-serif;
+    font-size: 1.2em;
+}
+
+.application-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.application-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f8f9fa;
+}
+
+.application-number {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #2d3436;
+}
+
+.application-id {
+    font-family: 'Proso', sans-serif;
+    font-size: 1.2em;
+    color: #636e72;
+    cursor: pointer;
+    background: #f8f9fa;
+    padding: 4px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.application-id:hover {
+    transform: translateY(-2px);
+}
+
+.application-contacts h4,
+.application-message h4 {
+    color: #2d3436;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.application-contacts p,
+.application-message p {
+    font-family: 'Proso', sans-serif;
+    font-size: 1.1em;
+    color: #636e72;
+    line-height: 1.5;
+    background: #f8f9fa;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border-left: 4px solid #c65a3a;
+}
+
+.application-message {
+    margin-top: 20px;
+}
+
+.application-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-btn,
+.copy-contacts-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Veimalyashka', sans-serif;
+    font-size: 0.8em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-btn {
+    background: #c65a3a;
+    color: white;
+}
+
+.contact-btn:hover {
+    background: #b54a2a;
+    transform: translateY(-2px);
+}
+
+.copy-contacts-btn {
+    background: #6c757d;
+    color: white;
+}
+
+.copy-contacts-btn:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 12px 16px;
+    border: 1px dashed #c62828;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: 'Proso', sans-serif;
+}
